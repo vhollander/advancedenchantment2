@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "advancedenchantments-2",
+	"version": "${version}",
+	"name": "AdvancedEnchants 2",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"makiinico"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/advancedenchantments-2/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.pstockholm.aegis2.Main"
+		],
+		"client": [
+			"me.pstockholm.aegis2.ExampleModClient"
+		]
+	},
+	"mixins": [
+		"advancedenchantments-2.mixins.json",
+		{
+			"config": "advancedenchantments-2.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": ">=1.18",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

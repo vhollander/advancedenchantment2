@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "me.pstockholm.aegis2.utils",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"EnchantManager",
+		"SmeltManager",
+		"PlayerMovement"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
